@@ -1,0 +1,468 @@
+*
+{
+	margin: 0;
+	padding: 0;
+}
+
+body
+{
+	color: #333;
+	font-family: Arial, Helvetica;
+	font-size: 16px;
+	text-align: left;
+	overflow-y: scroll;
+	background: url(../images/TwAHgQi2ZPB.png) 0 bottom repeat-x;
+	background: -webkit-gradient(linear, center top, center bottom, from(white), to(#D3D8E8));
+	background: -webkit-linear-gradient(top, white, #D3D8E8);
+}
+#fondo-imagenes, #fondo-imagenes img{
+	position: fixed;
+	left:0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+header#Height{
+	position: relative;
+    height: 110px;
+    max-width: 100%;
+	min-width:940px;
+}
+
+header#header
+{
+	position: relative;
+    height: 110px;
+    max-width: 100%;
+	min-width:940px;
+	background-color: #003364;
+    background-size:5px 5px,100% 100% ;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#003364), to(#003378));
+    background-image: -webkit-linear-gradient(45deg , transparent 0%, transparent 25%, rgba(0, 0, 0, 0.15) 25%, rgba(0, 0, 0, 0.15) 50%, transparent 50%, transparent 75%, rgba(0, 0, 0, 0.15) 75%, rgba(0, 0, 0, 0.15) 100%), rgba(0, 0, 0,.125) 20px),
+    -webkit-linear-gradient(top, #003364, #003378);
+    background-image: -moz-linear-gradient(45deg , transparent 0%, transparent 25%, rgba(0, 0, 0, 0.15) 25%, rgba(0, 0, 0, 0.15) 50%, transparent 50%, transparent 75%, rgba(0, 0, 0, 0.15) 75%, rgba(0, 0, 0, 0.15) 100%),
+    -moz-linear-gradient(top, #003364, #003378);
+    background-image: -ms-linear-gradient(45deg , transparent 0%, transparent 25%, rgba(0, 0, 0, 0.15) 25%, rgba(0, 0, 0, 0.15) 50%, transparent 50%, transparent 75%, rgba(0, 0, 0, 0.15) 75%, rgba(0, 0, 0, 0.15) 100%), rgba(0, 0, 0,.125) 20px),
+    -ms-linear-gradient(top, #003364, #003378);
+    background-image: -o-linear-gradient(45deg , transparent 0%, transparent 25%, rgba(0, 0, 0, 0.15) 25%, rgba(0, 0, 0, 0.15) 50%, transparent 50%, transparent 75%, rgba(0, 0, 0, 0.15) 75%, rgba(0, 0, 0, 0.15) 100%), rgba(0, 0, 0,.125) 20px),
+    -o-linear-gradient(top, #003364, #003378);
+    background-image: linear-gradient(45deg , transparent 0%, transparent 25%, rgba(0, 0, 0, 0.15) 25%, rgba(0, 0, 0, 0.15) 50%, transparent 50%, transparent 75%, rgba(0, 0, 0, 0.15) 75%, rgba(0, 0, 0, 0.15) 100%), rgba(0, 0, 0,.125) 20px),
+    linear-gradient(top, #003364, #003378);
+	box-shadow: 0px 2px 4px rgba(0,71,171,0.5) ;
+}
+#header .encabezado
+{
+	background-image:  url(../images/headersNew.png);
+	background-position: left top, right top;
+	background-repeat: no-repeat;
+	max-width:940px;
+	min-width:940px;
+	height: 110px;
+	margin:auto;
+}
+.titulo_del_sitio{
+	
+	text-transform: uppercase;
+	font-weight: 400;
+	line-height: 30px;
+	letter-spacing: -1px;
+	color: rgb(255, 255, 255);
+	font-family: Cambria,"Hoefler Text","Liberation Serif",Times,"Times New Roman",serif;
+	text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.9);
+	font-size: 40px ;
+	text-align: left ;
+	margin: 14px 15px 15px 100px ;
+	float: left ;
+}
+.SubTitulo_del_sitio{
+	font-size: 21px !important;
+}
+.titulo_del_sitioV2{
+	float: right ;
+	font-weight: 400;
+	line-height: 30px;
+	letter-spacing: -1px;
+	color: rgb(255, 255, 255);
+	font-family: Cambria,"Hoefler Text","Liberation Serif",Times,"Times New Roman",serif;
+	text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.9);
+	font-size: 40px ;
+	margin: 50px 15px 15px 100px ;
+	
+}
+.check
+{
+margin-left:150px;}
+.envio
+{
+	width:150px;
+	height:40px;
+	margin-left:35%;
+	margin-top:-90px;
+	color: black; 
+	text-shadow: -1px -1px 0 rgba(0,0,0,.9); 
+	font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	font-size:20px;
+	
+}
+#menu 
+{
+	position: relative;
+	padding-top:20px;
+	width: 100%;
+	text-align: left;
+	z-index: 2;
+	word-wrap:break-word;
+}
+#menu > li {
+	position: relative;
+	width:100%;
+	padding: 0px; 
+	list-style:none;
+}
+#menu > li > a {
+	position:relative;
+	display:inline-block;
+	font-size:20px;
+	line-height:15px;
+	width:100%;
+	cursor:pointer;
+	color:#fff;
+	background:#003364;
+	text-decoration:none;
+
+	letter-spacing:0px;
+	border:solid 1px #003360;
+	margin-top:5px;
+	padding:0px;
+	padding-top:20px;
+	padding-bottom:20px;
+	padding-left:5px;
+	
+	text-shadow: 0px 0px 1px rgba(0,0,0,0.5) ; 
+	
+	-webkit-transition: 0.1s ease-out;
+	-moz-transition: 0.4s ease-out;
+	-ms-transition: 0.4s ease-out;
+	-o-transition: 0.4s ease-out;
+	transition: 0.4s ease-out;
+}
+
+#menu > li > a:hover, #menu > li > a:active {
+	color:#000;
+	background-color:#FFF;
+	border:solid 1px  #CCCCCC;
+}
+#conpagina
+{
+	margin: 0 auto;
+	position: relative;
+	max-width:940px;
+	min-width:940px;
+	z-index:1;
+	max-height: 100%;
+	margin-top:10px;
+	
+}
+.block {
+	height:92px;
+	margin-top:10px;
+	z-index:0;
+}
+/*form#login
+{
+	position:absolute;
+    margin: auto;
+    background: #fff;
+    word-wrap:break-word;
+	opacity:1;
+	width:400px;
+	height:300px;
+	padding-left: 0px;
+	border: solid red;
+}
+*/
+.sub_seccion {
+	max-width:100%;
+	min-width:30%;
+	height:100%;
+	padding-top:20px;
+		padding-left:80px;
+	padding-bottom:20px;
+	position:relative;
+		color:black;
+			font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	font-size:20px;
+	
+}
+.seccion {
+	margin:0 auto;
+	max-width:100%;
+	min-width:30%;
+	height:100%;
+	color:#FFF;
+
+}
+
+
+/*#contenido form#login h1,*/
+.registro form#form2 span.inic,
+#MensageRecovery
+{
+	margin-top: -5px;
+	font-size: 20px;
+	font-weight: bold;
+	width:98%;
+	text-align:center;
+	color: #003364;
+	padding-bottom: 8px;
+	border-bottom: 1px solid #EBE6E2;
+	text-shadow: 0 0px 1px rgba(255,255,255,0.8);
+	box-shadow: 0 0px 1px rgba(255,255,255,0.8);
+	font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	
+	
+}
+
+
+
+.mensagePass
+{
+	color: grey;
+	font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	font-size:15px;
+	float:left;
+	margin:-20px 0 0;
+	
+}
+
+/***************************************************
+        input
+ **************************************************/
+select option
+{
+	width:100%;
+	border:solid #fff 1px;
+	
+}
+select{
+	border: 1px solid #ccc;
+	background: #fff !important;
+}
+
+#contenido form#login input:hover,
+#form2 input[type="button"]:focus,
+form#login input[type=submit]:focus {
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+	
+}
+.bg1
+{
+	position:relative;
+	z-index:0;/*altura de la capa*/
+	background:#fff;
+	margin-top:20px;
+	max-width:100%;
+	min-width:940px;
+	height: 110px;
+	margin:auto;   
+	/*box-shadow: 0px 0px 1px rgba(0,71,171,0.5) ;*/
+}
+	    
+footer {
+	position:relative;
+	margin: auto;
+	font-size:16px;
+	text-transform:uppercase;
+	font-weight:400;
+	line-height:37px;
+	
+	max-width:940px;
+	min-width:940px;
+	
+	padding:24px 0 0 0;
+	letter-spacing:-1px;
+	overflow:hidden;
+	font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	color: rgba(255, 255, 255, 0.1);
+	text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.9);
+}
+.bg1 footer hr{
+	border-color: #fff;
+	padding: 0px 0px 0px 0px ;
+}
+footer a {
+	color: rgba(255, 255, 255, 0.1);
+	text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.9);
+	text-decoration:none
+}
+footer a:hover {
+	color:#003364
+	text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.9);
+}
+.col_1 {
+	width:50%;
+	float:left;
+	color:#00ffff;
+}
+.col_2 {
+	max-width:41%;
+	margin-top:0px;
+	padding-top:40px;
+	margin-left:15%;
+	float:left;
+	text-align:center;
+		height:29px;
+}
+.titulo_del_sitioV3{
+	float:left ;
+	text-align: left ;
+	color: rgba(255, 255, 255, 0.1);
+	text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.9);
+	font-family: Cambria,"Hoefler Text","Liberation Serif",Times,"Times New Roman",serif;
+	font-size: 30px;
+}
+/*#footer_logo {
+	float:left;
+	background:url(../images/footers.png) no-repeat;
+	background-position: center ;
+	width:111px;
+	height:45px;
+	text-indent:-9999px;
+	margin-right:22px
+}*/
+/*
+		LOGIN
+
+*/
+#RespuestaLogin{
+	position:absolute ;
+	text-shadow: 0px 0px 0 rgba(0,0,0,.9);
+	font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	float:left;
+	color:#666;
+	padding: 20px 20px 20px 0px ;
+	z-index: 5 ;
+}
+/*
+
+		Mensage de Error
+		rojo : #BC1010
+
+*/
+.error{
+    background-color: #003364;
+    padding: 8px 10px;
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+	font-size: 12px;
+    margin-left: 16px;
+    margin-top: 6px;
+    position: absolute;
+	z-index: 5;
+}
+.error:before{ /* Este es un truco para crear una flechita */
+    content: '';
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid #003364;
+    border-left: 10px solid transparent;
+    left: -16px;
+    position: absolute;
+    top: 5px;
+}
+/*
+ * 				Mensage para las acciones del sistem 2014-01-05
+ */
+.TextStyl,
+#RespuestaPassRecovery{
+	text-shadow: none !important;
+	padding: 0px 1px ;
+}
+.ClassCorrecto,
+#RespuestaPassRecovery
+{
+	color: #32CD32;
+	text-align:center;
+	font-size: 15px !important;
+	text-shadow: 0 0 1px rgba(0,0,0,0.9) ;
+	padding: 2px 2px ;
+}
+.Aling,
+#RespuestaPassRecovery{
+	text-align:left !important;
+	margin-top: -3px !important ;
+}
+
+.ClassError{
+	position: relative;
+	color: #FFF;
+	text-align:center;
+	font-size: 12px !important;
+	text-shadow: 0 0 1px rgba(0,0,0,0.9) ;
+	padding: 2px 0 ;
+}
+.StyleMensaje{
+	position: absolute;
+	color: grey;
+	margin: 45px 10px;
+}
+/*
+ * 
+ * Stilo para la ventana de materias agregado 17-02-2014
+ * /
+ */
+#InicioIdPagination{
+	color: #003364;
+	font-weight: 900;
+	padding: 0px 0px 0px 10px ;
+}#InicioIdPagination a{
+	color: #003390;
+	text-decoration: none ;
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: 400;
+	letter-spacing: -1px;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	color: rgba(255, 255, 255, 0.1);
+	text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.9);
+	
+}
+/*Ventana emergente*/
+#TableCarreras { 
+	position: relative; 
+} #TableCarreras p span { 
+	display: none; 
+	color: #FFFFFF; 	
+} #TableCarreras p:hover span { 
+	display: block; 
+	position: absolute; 
+	width: 200px; 
+	background: rgba(0,0,0,0.9);
+	min-height: 150px; 
+	max-height: auto ;
+	left: 100px; 
+	top: -10px; 
+	color: #fff; 
+	padding: 0 5px; 
+	z-index: 5 ;
+} #TableCarreras p:hover span:before {
+    content: "";
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent rgba(0,0,0,0.9) transparent transparent;
+    left: -16px;
+    position: absolute;
+    top: 5px;
+}.ResulSelectCarreraAdmin{
+	color:#000;
+	font-weight: bold;
+	font-size: 15px;
+	margin: 0px 20px 10px 0;
+	line-height: 35px;
+	font-family: Arial, Helvetica;
+}
