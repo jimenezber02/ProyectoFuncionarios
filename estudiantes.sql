@@ -1023,29 +1023,13 @@ INSERT INTO `provincias_panama` (`id_num_prov`, `nombre`) VALUES
 --
 
 --
--- Indices de la tabla `corregimientos_panama`
---
-ALTER TABLE `corregimientos_panama`
-  ADD PRIMARY KEY (`id_num_correg`);
-
---
--- Indices de la tabla `departamento_u_nacional`
---
-ALTER TABLE `departamento_u_nacional`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indices de la tabla `distritos_panama`
---
-ALTER TABLE `distritos_panama`
-  ADD PRIMARY KEY (`id_num_dist`);
-
---
 -- Indices de la tabla `facultades_u_nacional`
 --
 ALTER TABLE `facultades_u_nacional`
   ADD PRIMARY KEY (`id`);
 
+ALTER TABLE `departamento_u_nacional`
+  ADD PRIMARY KEY (`id`);
 --
 -- Indices de la tabla `estudiantes`
 --
@@ -1057,6 +1041,19 @@ ALTER TABLE `estudiantes`
 --
 ALTER TABLE `provincias_panama`
   ADD PRIMARY KEY (`id_num_prov`);
+--
+--
+-- Indices de la tabla `distritos_panama`
+--
+ALTER TABLE `distritos_panama`
+  ADD PRIMARY KEY (`id_num_dist`);
+
+-- Indices de la tabla `corregimientos_panama`
+--
+ALTER TABLE `corregimientos_panama`
+  ADD PRIMARY KEY (`id_num_correg`);
+
+
 
 --
 -- AUTO_INCREMENT de las tablas volcadas
@@ -1097,6 +1094,25 @@ ALTER TABLE `estudiantes`
 --
 ALTER TABLE `provincias_panama`
   MODIFY `id_num_prov` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+
+
+
+ALTER TABLE `corregimientos_panama`
+  ADD CONSTRAINT fkd FOREIGN KEY(id_num_dist) REFERENCES distritos_panama(id_num_dist);
+--
+-- Indices de la tabla `departamento_u_nacional`
+--
+
+
+ALTER TABLE `departamento_u_nacional`
+  ADD CONSTRAINT fkf FOREIGN KEY(relacion) REFERENCES facultades_u_nacional(id);
+
+
+
+ALTER TABLE `distritos_panama`
+  ADD CONSTRAINT fkp FOREIGN KEY(id_num_prov) REFERENCES provincias_panama(id_num_prov);
+
+
 
 
 COMMIT;
