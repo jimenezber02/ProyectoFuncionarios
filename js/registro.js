@@ -143,7 +143,7 @@ function enviaDatos(datos)
 	$.ajax(
 	{
 		type:"POST",
-		url:"../php/registraFunc.php",
+		url:"../php/registraEst.php",
 		data:datos,
 		success:function(r)
 		{

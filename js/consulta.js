@@ -14,7 +14,7 @@ function consultaDB(cedula)
 	$.ajax(
 	{
 		type:"GET",
-		url:"../php/buscaFuncionario.php",
+		url:"../php/buscaEstudiante.php",
 		data: cadena,
 		success:function(r)
 		{

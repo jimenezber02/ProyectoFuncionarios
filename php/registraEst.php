@@ -1,5 +1,5 @@
 <?php
-	include("claseFuncionario.php");
+	include("claseEstudiante.php");
 
 	$data = array(
 		'ced' 		=> $_POST['ced'],
@@ -13,8 +13,8 @@
 		'anio_t' 	=> $_POST['anio']
 	);
 
-	$obj = new claseFuncionario();
+	$obj = new claseEstudiante();
 	
-	echo($obj->registraFuncionario($data));
+	echo($obj->registraEstudiante($data));
 
 ?>

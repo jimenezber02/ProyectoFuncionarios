@@ -9,12 +9,13 @@ window.onload=function()
 
 function consultaDB(dato)
 {
+	var h1 = document.querySelector('.modal-header h1');
 	var tbody = document.querySelector('.modal-body table tbody');
 	cadena="anio="+dato;
 	$.ajax(
 	{
 		type:"GET",
-		url:"../php/buscaFuncionario2.php",
+		url:"../php/buscaEstudiante2.php",
 		data: cadena,
 		success:function(r)
 		{
@@ -36,6 +37,7 @@ function consultaDB(dato)
 				`;
 				fila += celdas;
 			});
+			h1.innerHTML = 'T&iacute;tulos a&ntilde;o '+ dato; 
 			tbody.innerHTML = fila;
 			$('#Modal').modal('show');
 			/*if(r > 0)
