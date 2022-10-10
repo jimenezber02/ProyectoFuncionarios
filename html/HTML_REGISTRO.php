@@ -21,7 +21,7 @@
 	<header id="header">
 		<div class="encabezado">
 		<h1 class="titulo_del_sitio"><span class="SubTitulo_del_sitio">Registro</span><br /> Nuevo</h1>
-		<h1 class="titulo_del_sitioV2">Título de Funcionarios</h1>
+		<h1 class="titulo_del_sitioV2">Título de Estudiante</h1>
 		</div>
 	</header> <!-- fin del header  -->
 

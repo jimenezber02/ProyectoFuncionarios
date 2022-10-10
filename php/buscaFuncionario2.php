@@ -1,11 +1,6 @@
 <?php
-	include("conexion.php");
-	$obj = new conexion();
+	include("claseFuncionario.php");
+	$cf = new claseFuncionario();
 
-	$an = $_GET['anio'];
-	$sentencia = "SELECT * FROM funcionarios where(anio='$an') LIMIT 1";
-
-	$result=mysqli_query($obj->conectar(),$sentencia);
-
-	echo($resultado=mysqli_num_rows($result));
+	echo(json_encode($cf->getFuncionariosAnio($_GET['anio'])));
 ?>

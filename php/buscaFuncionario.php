@@ -1,12 +1,9 @@
 <?php
-	include("conexion.php");
-	$obj = new conexion();
+	include("claseFuncionario.php");
+	$obj = new claseFuncionario();
 
 	$ced = $_GET['cedula'];
-	$sentencia = "SELECT * FROM funcionarios where(cedula='$ced')";
 
-	$result = mysqli_query($obj->conectar(),$sentencia);
-
-	echo($resultado = mysqli_num_rows($result));
+	echo(json_encode($obj->getFuncionario($ced)));
 
 ?>

@@ -9,6 +9,7 @@ window.onload=function()
 
 function consultaDB(cedula)
 {
+	var tbody = document.querySelector('.modal-body table tbody');
 	cadena = "cedula=" + cedula;
 	$.ajax(
 	{
@@ -17,13 +18,22 @@ function consultaDB(cedula)
 		data: cadena,
 		success:function(r)
 		{
-			console.log(r);
-			if(r > 0)
-			{
-				
-				alert("Si existe esa cedula");
-				window.open("../php/PDFcedula.php?ced="+cedula,"_blank");
-				window.location.href="../index.html";
+			data = $.parseJSON(r);
+			if(data != null){
+				var fila = `
+					<tr>
+						<td>${data.cedula}</td>
+						<td>${data.nombre}</td>
+						<td>${data.Provincia}</td>
+						<td>${data.Distrito}</td>
+						<td>${data.corregimiento}</td>
+						<td>${data.facultad}</td>
+						<td>${data.carrera}</td>
+						<td>${data.anio}</td>
+					</tr>
+				`;
+				tbody.innerHTML = fila;
+				$('#Modal').modal('show');
 			}
 			else
 			{
